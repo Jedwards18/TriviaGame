@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/medievalsharp" type="text/css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+    <div id="bg">
+        <img src="assets/images/iron_throne.jpg"></div>
+    </div>
+    <div class="header">
+        <div class="row">
+            <div class="col-md-12 border">
+                <div id="title">Game of Thrones Trivia</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-md-4 border'>
+                <div class="GoT_gif">
+                    <img src="assets/images/GoT4.gif">
+                </div>
+            </div>
+            <div class="col-md-4 border">
+                <div id="timer">00:00</div>
+            </div>
+            <div class='col-md-4 border'>
+                <div class="GoT_gif">
+                    <img src="assets/images/GoT4.gif">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="question_group">
+        <div class="row">
+            <div class="col-md-12 border">
+                <div class="question">
+                    During what event were the Starks betrayed by their former allies, and most of the family slaughtered?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="answers">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">The Purple Wedding</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">The War of the Five Kings</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline3">The Red Wedding</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline4">Robert's Rebellion</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="question_group">
+        <div class="row">
+            <div class="col-md-12 border">
+                <div class="question">
+                    Whom did Nedd Stark famously defeat at the Tower of Joy during Robert's Rebellion?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="answers">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline5" name="customRadioInline2" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline5">Aegon Targaryen</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline6" name="customRadioInline2" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline6">Jaime Lannister</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline7" name="customRadioInline2" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline7">Geoffrey Baratheon</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline8" name="customRadioInline2" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline8">The Sword of the Morning</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="question_group">
+        <div class="row">
+            <div class="col-md-12 border">
+                <div class="question">
+                    Jon Snow is the bastard child of Rhaegar Targaryen and who?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="answers">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline9" name="customRadioInline3" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline9">Danaerys Targaryen</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline10" name="customRadioInline3" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline10">Lyanna Stark</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline11" name="customRadioInline3" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline11">Lyanna Mormont</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline12" name="customRadioInline3" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline12">Cersei Lannister</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question_group">
+        <div class="row">
+            <div class="col-md-12 border">
+                <div class="question">
+                    Who was Margaery Tyrell's first husband?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="answers">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline9" name="customRadioInline4" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline13">Stannis Baratheon</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline10" name="customRadioInline4" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline14">Renly Baratheon</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline11" name="customRadioInline4" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline15">Joffrey Baratheon</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline12" name="customRadioInline4" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline16">Tommen Baratheon</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question_group">
+        <div class="row">
+            <div class="col-md-12 border">
+                <div class="question">
+                    Who is known as the King-Beyond-The-Wall?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="answers">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline9" name="customRadioInline5" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline9">Mance Rayder</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline10" name="customRadioInline5" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline10">The Night King</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline11" name="customRadioInline5" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline11">Tormund Giantsbane</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline12" name="customRadioInline5" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline12">Stannis Baratheon</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
