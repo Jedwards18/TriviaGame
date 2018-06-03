@@ -1,0 +1,93 @@
+window.onload = function() {
+    $("#start").on("click", stopwatch.start);
+    $("#submit").on("click", stopwatch.stop);
+    $(".question_group").hide();
+    $("#submit_button").hide();
+
+    $("#start").on("click", function() {
+        $(".question_group").show();
+        $("#submit_button").show();
+    })
+};
+
+    var intervalId;
+
+    var clockRunning = false;
+
+    var stopwatch = {
+        time: 60,
+
+        start: function() {
+            if (!clockRunning) {
+                intervalId = setInterval(stopwatch.count, 1000);
+                clockRunning = true;
+            }
+        },
+        stop: function() {
+            clearInterval(intervalId);
+            clockRunning = false;
+        },
+        count: function() {
+            stopwatch.time--;
+            var converted = stopwatch.timeConverter(stopwatch.time);
+            console.log(converted);
+            $("#timer").text(converted);
+            if (stopwatch.time == 0 ) {
+                clearInterval(intervalId);
+                clockRunning = false;
+            }
+        },
+
+        timeConverter: function(t) {
+            var minutes = Math.floor(t / 60);
+            var seconds = t - (minutes * 60);
+
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            if (minutes === 0) {
+                minutes = "00";
+            }
+            else if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+
+            return minutes + ":" + seconds;
+        }
+    };
+
+$(document).ready(function() {
+    
+    var score = 0;
+    var playerGuess;
+    var answeredCorrectly = 0;
+    var answeredIncorrectly = 0;
+
+    function displayResults() {
+        alert("Your score is: " + score + "/250");
+        alert("You answered " + answeredCorrectly + " questions correctly");
+        alert("You answered " + answeredIncorrectly + " questions incorrectly");
+    };
+    
+    $("#submit").on("click", function() {
+        displayResults();
+    });
+    
+    $(".radio").on("click", function() {
+        playerGuess = $(this).val();
+        console.log(playerGuess);
+
+        if (playerGuess === "correct") {
+            score += 50;
+            answeredCorrectly++;
+            console.log(score);
+            console.log(answeredCorrectly);
+        } else {
+            answeredIncorrectly++;
+            console.log(answeredIncorrectly)
+        }
+        if (stopwatch.time == 0) {
+            displayResults();
+        }
+    });
+});

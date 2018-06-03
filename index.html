@@ -15,7 +15,7 @@
     <div id="bg">
         <img src="assets/images/iron_throne.jpg"></div>
     </div>
-    <div class="header">
+    <div id="header">
         <div class="row">
             <div class="col-md-12 border">
                 <div id="title">Game of Thrones Trivia</div>
@@ -28,7 +28,16 @@
                 </div>
             </div>
             <div class="col-md-4 border">
-                <div id="timer">00:00</div>
+                <div class="row">
+                    <div class="col-md-12 border">
+                        <div id="timer">01:00</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 border">
+                        <button id="start">Start</button>
+                    </div>
+                </div>
             </div>
             <div class='col-md-4 border'>
                 <div class="GoT_gif">
@@ -49,19 +58,19 @@
         <div class="row">
             <div class="answers">
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline1">The Purple Wedding</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline2">The War of the Five Kings</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                    <input type="radio" id="customRadioInline3" name="customRadioInline1" value="correct" class="radio">
                     <label class="custom-control-label" for="customRadioInline3">The Red Wedding</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                    <input type="radio" id="customRadioInline4" name="customRadioInline1" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline4">Robert's Rebellion</label>
                 </div>
             </div>
@@ -78,19 +87,19 @@
         <div class="row">
             <div class="answers">
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline5" name="customRadioInline2" class="custom-control-input">
+                    <input type="radio" id="customRadioInline5" name="customRadioInline2" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline5">Aegon Targaryen</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline6" name="customRadioInline2" class="custom-control-input">
+                    <input type="radio" id="customRadioInline6" name="customRadioInline2" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline6">Jaime Lannister</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline7" name="customRadioInline2" class="custom-control-input">
+                    <input type="radio" id="customRadioInline7" name="customRadioInline2" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline7">Geoffrey Baratheon</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline8" name="customRadioInline2" class="custom-control-input">
+                    <input type="radio" id="customRadioInline8" name="customRadioInline2" value="correct" class="radio">
                     <label class="custom-control-label" for="customRadioInline8">The Sword of the Morning</label>
                 </div>
             </div>
@@ -107,19 +116,19 @@
         <div class="row">
             <div class="answers">
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline9" name="customRadioInline3" class="custom-control-input">
+                    <input type="radio" id="customRadioInline9" name="customRadioInline3" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline9">Danaerys Targaryen</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline10" name="customRadioInline3" class="custom-control-input">
+                    <input type="radio" id="customRadioInline10" name="customRadioInline3" value="correct" class="radio">
                     <label class="custom-control-label" for="customRadioInline10">Lyanna Stark</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline11" name="customRadioInline3" class="custom-control-input">
+                    <input type="radio" id="customRadioInline11" name="customRadioInline3" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline11">Lyanna Mormont</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline12" name="customRadioInline3" class="custom-control-input">
+                    <input type="radio" id="customRadioInline12" name="customRadioInline3" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline12">Cersei Lannister</label>
                 </div>
             </div>
@@ -137,19 +146,19 @@
         <div class="row">
             <div class="answers">
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline9" name="customRadioInline4" class="custom-control-input">
+                    <input type="radio" id="customRadioInline13" name="customRadioInline4" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline13">Stannis Baratheon</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline10" name="customRadioInline4" class="custom-control-input">
+                    <input type="radio" id="customRadioInline14" name="customRadioInline4" value="correct" class="radio">
                     <label class="custom-control-label" for="customRadioInline14">Renly Baratheon</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline11" name="customRadioInline4" class="custom-control-input">
+                    <input type="radio" id="customRadioInline15" name="customRadioInline4" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline15">Joffrey Baratheon</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline12" name="customRadioInline4" class="custom-control-input">
+                    <input type="radio" id="customRadioInline16" name="customRadioInline4" value="incorrect" class="radio">
                     <label class="custom-control-label" for="customRadioInline16">Tommen Baratheon</label>
                 </div>
             </div>
@@ -167,23 +176,27 @@
         <div class="row">
             <div class="answers">
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline9" name="customRadioInline5" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline9">Mance Rayder</label>
+                    <input type="radio" id="customRadioInline17" name="customRadioInline5" value="correct" class="radio">
+                    <label class="custom-control-label" for="customRadioInline17">Mance Rayder</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline10" name="customRadioInline5" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline10">The Night King</label>
+                    <input type="radio" id="customRadioInline18" name="customRadioInline5" value="incorrect" class="radio">
+                    <label class="custom-control-label" for="customRadioInline18">The Night King</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline11" name="customRadioInline5" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline11">Tormund Giantsbane</label>
+                    <input type="radio" id="customRadioInline19" name="customRadioInline5" value="incorrect" class="radio">
+                    <label class="custom-control-label" for="customRadioInline19">Tormund Giantsbane</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline12" name="customRadioInline5" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline12">Stannis Baratheon</label>
+                    <input type="radio" id="customRadioInline20" name="customRadioInline5" value="incorrect" class="radio">
+                    <label class="custom-control-label" for="customRadioInline20">Jon Snow</label>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="submit_button">
+        <button id="submit">Submit</button>
     </div>
 
 </body>

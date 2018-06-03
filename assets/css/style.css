@@ -23,7 +23,7 @@ body {
     min-height: 50%;
 }
 
-.header {
+#header {
     margin: auto;
     width: 80%;
     margin-top: 30px;
@@ -33,9 +33,10 @@ body {
     text-align: center;
     padding: 30px;
     background: white;
-    border-style: dashed;
+    border-style: solid;
     border-color: black;
     border-width: 2px;
+    border-radius: 5px;
     margin-bottom: 30px;
 }
 
@@ -43,11 +44,20 @@ body {
     text-align: center;
     background: white;
     padding: 10px;
-    border-style: solid;
+    border-style: dashed;
     border-color: black;
     border-width: 2px;
+    border-radius: 5px;
     width: 100px;
+    height: 50px;
     margin: auto;
+    margin-bottom: 30px;
+}
+
+#start {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
 }
 
 .question_group {
@@ -55,7 +65,10 @@ body {
     width: 80%;
     padding: 10px;
     background: white;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
 }
 
 .question {
@@ -63,6 +76,7 @@ body {
     border-style: dashed;
     border-color: black;
     border-width: 2px;
+    border-radius: 5px;
     font-size: 20px;
     padding: 10px;
 }
@@ -70,4 +84,16 @@ body {
 .answers {
     margin: auto;
     padding: 30px;
+}
+
+#submit_button {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+}
+
+#submit {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
 }
