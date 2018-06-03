@@ -1,12 +1,12 @@
 window.onload = function() {
     $("#start").on("click", stopwatch.start);
     $("#submit").on("click", stopwatch.stop);
-    $(".question_group").hide();
-    $("#submit_button").hide();
+    $(".question_group, #submit_button, #reset").hide();
+    $("#player_score, #questions_correct, #questions_incorrect").hide();
 
     $("#start").on("click", function() {
-        $(".question_group").show();
-        $("#submit_button").show();
+        $(".question_group, #submit_button").show();
+        $("#start").hide();
     })
 };
 
@@ -30,7 +30,7 @@ window.onload = function() {
         count: function() {
             stopwatch.time--;
             var converted = stopwatch.timeConverter(stopwatch.time);
-            console.log(converted);
+            //console.log(converted);
             $("#timer").text(converted);
             if (stopwatch.time == 0 ) {
                 clearInterval(intervalId);
@@ -64,12 +64,14 @@ $(document).ready(function() {
     var answeredIncorrectly = 0;
 
     function displayResults() {
-        alert("Your score is: " + score + "/250");
-        alert("You answered " + answeredCorrectly + " questions correctly");
-        alert("You answered " + answeredIncorrectly + " questions incorrectly");
+        $("#player_score").text("You're score is: " + score + " out of 250");
+        $("#questions_correct").text("Questions answered correctly: " + answeredCorrectly);
+        $("#questions_incorrect").text("Questions answered incorrectly " + answeredIncorrectly);
     };
     
     $("#submit").on("click", function() {
+        $("#player_score, #questions_correct, #questions_incorrect, #reset").show();
+        $(".question_group, #submit_button").hide();
         displayResults();
     });
     
