@@ -69,6 +69,10 @@ $(document).ready(function() {
         $("#questions_incorrect").text("Questions answered incorrectly " + answeredIncorrectly);
     };
     
+    $("#reset").on("click", function() {
+        window.location.reload();
+    })
+    
     $("#submit").on("click", function() {
         $("#player_score, #questions_correct, #questions_incorrect, #reset").show();
         $(".question_group, #submit_button").hide();
