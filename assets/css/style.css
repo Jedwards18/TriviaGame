@@ -112,12 +112,6 @@ body {
     padding: 30px;
 }
 
-.radio {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-}
-
 #submit_button {
     margin: auto;
     width: 75%;
