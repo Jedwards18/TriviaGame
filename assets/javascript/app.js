@@ -56,6 +56,19 @@ window.onload = function() {
         }
     };
 
+window.onscroll = function() {myFunction()};
+
+var header = $("#myHeader");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    header.classList.add(".sticky");
+    } else {
+    }
+}
+
 $(document).ready(function() {
     
     var score = 0;
@@ -66,7 +79,7 @@ $(document).ready(function() {
     function displayResults() {
         $("#player_score").text("You're score is: " + score + " out of 250");
         $("#questions_correct").text("Questions answered correctly: " + answeredCorrectly);
-        $("#questions_incorrect").text("Questions answered incorrectly " + answeredIncorrectly);
+        $("#questions_incorrect").text("Questions answered incorrectly: " + answeredIncorrectly);
     };
     
     $("#reset").on("click", function() {

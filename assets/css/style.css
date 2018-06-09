@@ -23,10 +23,20 @@ body {
     min-height: 50%;
 }
 
-#header {
+.header {
     margin: auto;
     width: 80%;
     margin-top: 30px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 80%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
 }
 
 #title {
@@ -100,6 +110,12 @@ body {
 .answers {
     margin: auto;
     padding: 30px;
+}
+
+.radio {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #submit_button {
